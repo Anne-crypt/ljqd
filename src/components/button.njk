@@ -1,0 +1,18 @@
+{% macro navButton(href, label, isActive = false) %}
+<button
+	type="button"
+	class="site-header__nav-button{% if isActive %} site-header__nav-button--active{% endif %}"
+	onclick="window.location.href='{{ href }}'"
+>
+	{{ label }}
+</button>
+{% endmacro %}
+{% macro ctaButton(href, label, isActive = false) %}
+<button
+	type="button"
+	class="site-header__cta-button{% if isActive %} site-header__cta-button--active{% endif %}"
+	onclick="window.location.href='{{ href }}'"
+>
+	{{ label }}
+</button>
+{% endmacro %}

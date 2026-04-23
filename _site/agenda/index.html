@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Agenda</title>
+</head>
+
+<body>
+
+<header class="site-header" data-mobile-header>
+	
+
+	<a href="/" class="site-header__brand" aria-label="Retour à l'accueil">
+		<img src="/assets/images/ljqd.jpg" alt="Logo du site" class="site-header__logo">
+		<span class="site-header__wordmark" aria-hidden="true"></span>
+	</a>
+
+	<button
+		type="button"
+		class="site-header__menu-toggle"
+		aria-expanded="false"
+		aria-controls="site-header-nav"
+		aria-label="Ouvrir le menu"
+	>
+		<span class="site-header__menu-toggle-line" aria-hidden="true"></span>
+		<span class="site-header__menu-toggle-line" aria-hidden="true"></span>
+		<span class="site-header__menu-toggle-line" aria-hidden="true"></span>
+	</button>
+
+	<nav id="site-header-nav" class="site-header__nav" aria-label="Navigation principale">
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/'"
+>
+	Accueil
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/spectacle/'"
+>
+	Spectacle
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button site-header__nav-button--active"
+	onclick="window.location.href='/agenda/'"
+>
+	Agenda
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/artists/'"
+>
+	Les artistes
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/support/'"
+>
+	Nous soutenir
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__cta-button"
+	onclick="window.location.href='/contact/'"
+>
+	Nous contacter
+</button>
+
+	</nav>
+</header>
+
+<script>
+	(function () {
+		var header = document.querySelector('[data-mobile-header]');
+		if (!header) {
+			return;
+		}
+
+		var toggle = header.querySelector('.site-header__menu-toggle');
+		var nav = header.querySelector('.site-header__nav');
+		if (!toggle || !nav) {
+			return;
+		}
+
+		function setExpanded(expanded) {
+			header.classList.toggle('is-open', expanded);
+			toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+			toggle.setAttribute('aria-label', expanded ? 'Fermer le menu' : 'Ouvrir le menu');
+		}
+
+		toggle.addEventListener('click', function () {
+			setExpanded(!header.classList.contains('is-open'));
+		});
+
+		nav.addEventListener('click', function (event) {
+			if (event.target.closest('button')) {
+				setExpanded(false);
+			}
+		});
+
+		window.addEventListener('resize', function () {
+			if (window.innerWidth > 960) {
+				setExpanded(false);
+			}
+		});
+	})();
+</script>
+
+
+<main>
+  <div class="home-container">
+    <div class="agenda-row">
+  <img src="/assets/images/agenda/DSC03521_2.jpg" alt="" class="agenda-row__image">
+  <div>
+		<h1><span style="color: var(--color-pink); opacity: 0.8;">2026</span></h1>
+<p><p>7 juin (en cours d'organisation)<br>
+Les Guinguettes de l'Yvette - Festival d'art de rue en Essonne</p></p>
+<p><p>6 juin (en cours d'organisation)<br>
+A l'occasion de La Nuit Blanche avec l'association Lézards de la Bièvre - Paris 75013</p></p>
+<p><div class="agenda-cta">
+<a href="/contact/" class="agenda-cta__button">Contactez-nous</a>
+</div></p>
+  </div>
+</div>
+<div>
+	<br>
+</div>
+<div class="agenda-row">
+	<div class="passed-agenda-row__images">
+		<img src="/assets/images/agenda/110.jpg" alt="" class="passed-agenda-row__image">
+		<img src="/assets/images/agenda/153.jpg" alt="" class="passed-agenda-row__image">
+		<img src="/assets/images/agenda/160.jpg" alt="" class="passed-agenda-row__image">
+<p></div></p>
+  <div>
+		<h1>2025</h1>
+<p><p>7 novembre - théâtre de l’école Steiner, Verrières le Buisson<br>
+<span class="compagny-highlight">Longue Distance</span></p></p>
+<p><p>20 septembre - festival Festibeer, Saint-Jean-de-Fos<br>
+<span class="compagny-highlight">Longue Distance</span></p></p>
+<p><p>27 et 28 août - festival d’Aurillac<br>
+<span class="compagny-highlight">Longue Distance</span></p></p>
+<p><p>29 et 30 mars - théâtre El ClandDestino, Paris<br>
+<span class="compagny-highlight">Longue Distance</span></p></p>
+<p><div>
+<br>
+</div></p>
+<p><h1>2024</h1></p>
+<p><p>14 septembre - Fey’stival, Metz<br>​​
+<span class="compagny-highlight">Longue Distance</span></p></p>
+<p><p>​Du 14 au 17 août - festival d’Aurillac
+Sortie de création de <span class="compagny-highlight">Longue Distance</span></p></p>
+<p></div></p>
+</div>
+<!-- # 2024
+
+14 septembre - Fey’stival, Metz​​ “Longue Distance” 
+
+​​Du 14 au 17 août - festival d’Aurillac
+Sortie de création de “Longue Distance” -->
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer__copy">© 2026</p>
+  <a href="/" class="site-footer__logo-link" aria-label="Retour à l'accueil">
+    <img src="/assets/images/logo-footer.png" alt="Les jambes qui doutent" class="site-footer__logo">
+  </a>
+  <a href="https://www.instagram.com/lesjambequidoutent/" class="site-footer__insta" target="_blank" rel="noopener noreferrer" aria-label="Nous suivre sur Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    <span>Nous suivre</span>
+  </a>
+</footer>
+
+</body>
+</html>
