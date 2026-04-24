@@ -19,12 +19,12 @@
 	</button>
 
 	<nav id="site-header-nav" class="site-header__nav" aria-label="Navigation principale">
-		{{ navButton('/', 'Accueil', page.url == '/') }}
-		{{ navButton('/spectacle/', 'Spectacle', page.url == '/spectacle/') }}
-		{{ navButton('/agenda/', 'Agenda', page.url == '/agenda/') }}
-		{{ navButton('/artists/', 'Les artistes', page.url == '/artists/') }}
-		{{ navButton('/support/', 'Nous soutenir', page.url == '/support/') }}
-		{{ ctaButton('/contact/', 'Nous contacter', page.url == '/contact/') }}
+		{{ navButton('/' | url, 'Accueil', page.url == '/') }}
+		{{ navButton('/spectacle/' | url, 'Spectacle', page.url == '/spectacle/') }}
+		{{ navButton('/agenda/' | url, 'Agenda', page.url == '/agenda/') }}
+		{{ navButton('/artists/' | url, 'Les artistes', page.url == '/artists/') }}
+		{{ navButton('/support/' | url, 'Nous soutenir', page.url == '/support/') }}
+		{{ ctaButton('/contact/' | url, 'Nous contacter', page.url == '/contact/') }}
 	</nav>
 </header>
 
