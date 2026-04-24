@@ -20,11 +20,11 @@
 
 	<nav id="site-header-nav" class="site-header__nav" aria-label="Navigation principale">
 		{{ navButton('/' | url, 'Accueil', page.url == '/') }}
-		{{ navButton('/spectacle/' | url, 'Spectacle', page.url == '/spectacle/') }}
-		{{ navButton('/agenda/' | url, 'Agenda', page.url == '/agenda/') }}
-		{{ navButton('/artists/' | url, 'Les artistes', page.url == '/artists/') }}
-		{{ navButton('/support/' | url, 'Nous soutenir', page.url == '/support/') }}
-		{{ ctaButton('/contact/' | url, 'Nous contacter', page.url == '/contact/') }}
+		{{ navButton('/spectacle/' | url, 'Spectacle', page.url.startsWith('/spectacle')) }}
+		{{ navButton('/agenda/' | url, 'Agenda', page.url.startsWith('/agenda')) }}
+		{{ navButton('/artists/' | url, 'Les artistes', page.url.startsWith('/artists')) }}
+		{{ navButton('/support/' | url, 'Nous soutenir', page.url.startsWith('/support')) }}
+		{{ ctaButton('/contact/' | url, 'Nous contacter', page.url.startsWith('/contact')) }}
 	</nav>
 </header>
 

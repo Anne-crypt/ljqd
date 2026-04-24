@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/assets");
   return {
-    pathPrefix: "/ljqd/",
+    pathPrefix: process.env.ELEVENTY_BASE || "/",
     dir: {
       input: "src",
       includes: "layouts",

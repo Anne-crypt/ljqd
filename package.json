@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:gh": "ELEVENTY_BASE=/ljqd/ eleventy",
+    "build:prod": "ELEVENTY_BASE=/ eleventy"
   },
   "keywords": [],
   "author": "",
