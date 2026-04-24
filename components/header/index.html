@@ -1,0 +1,114 @@
+<header class="site-header" data-mobile-header>
+	
+
+	<a href="/" class="site-header__brand" aria-label="Retour à l'accueil">
+		<img src="/assets/images/ljqd.jpg" alt="Logo du site" class="site-header__logo">
+		<span class="site-header__wordmark" aria-hidden="true"></span>
+	</a>
+
+	<button
+		type="button"
+		class="site-header__menu-toggle"
+		aria-expanded="false"
+		aria-controls="site-header-nav"
+		aria-label="Ouvrir le menu"
+	>
+		<span class="site-header__menu-toggle-line" aria-hidden="true"></span>
+		<span class="site-header__menu-toggle-line" aria-hidden="true"></span>
+		<span class="site-header__menu-toggle-line" aria-hidden="true"></span>
+	</button>
+
+	<nav id="site-header-nav" class="site-header__nav" aria-label="Navigation principale">
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/'"
+>
+	Accueil
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/spectacle/'"
+>
+	Spectacle
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/agenda/'"
+>
+	Agenda
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/artists/'"
+>
+	Les artistes
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__nav-button"
+	onclick="window.location.href='/support/'"
+>
+	Nous soutenir
+</button>
+
+		
+<button
+	type="button"
+	class="site-header__cta-button"
+	onclick="window.location.href='/contact/'"
+>
+	Nous contacter
+</button>
+
+	</nav>
+</header>
+
+<script>
+	(function () {
+		var header = document.querySelector('[data-mobile-header]');
+		if (!header) {
+			return;
+		}
+
+		var toggle = header.querySelector('.site-header__menu-toggle');
+		var nav = header.querySelector('.site-header__nav');
+		if (!toggle || !nav) {
+			return;
+		}
+
+		function setExpanded(expanded) {
+			header.classList.toggle('is-open', expanded);
+			toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+			toggle.setAttribute('aria-label', expanded ? 'Fermer le menu' : 'Ouvrir le menu');
+		}
+
+		toggle.addEventListener('click', function () {
+			setExpanded(!header.classList.contains('is-open'));
+		});
+
+		nav.addEventListener('click', function (event) {
+			if (event.target.closest('button')) {
+				setExpanded(false);
+			}
+		});
+
+		window.addEventListener('resize', function () {
+			if (window.innerWidth > 960) {
+				setExpanded(false);
+			}
+		});
+	})();
+</script>
