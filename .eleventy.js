@@ -1,6 +1,6 @@
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
   return {
     pathPrefix: "/ljqd/",
     dir: {
