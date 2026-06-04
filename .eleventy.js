@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig) {
+eleventyConfig.addPassthroughCopy("src/robots.txt");
 eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   return {
     pathPrefix: process.env.ELEVENTY_BASE || "/",
