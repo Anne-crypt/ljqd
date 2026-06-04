@@ -2,6 +2,8 @@
 title: Accueil
 layout: base.njk
 permalink: /
+description: "Les jambes qui doutent est une compagnie de danse créative basée en Île-de-France, explorant la danse théâtrale et l'hybridité artistique."
+keywords: "danse, compagnie, théâtre, performance, Île-de-France, chorégraphie, Les jambes qui doutent"
 ---
 <div class="intro">
   <img src="{{'/assets/images/banner.jpg' | url}}" alt="Photo" class="intro__image">

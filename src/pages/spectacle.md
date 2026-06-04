@@ -2,6 +2,8 @@
 title: Spectacle
 layout: base.njk
 permalink: /spectacle/
+description: "Les jambes qui doutent est une compagnie de danse créative basée en Île-de-France, explorant la danse théâtrale et l'hybridité artistique."
+keywords: "danse, compagnie, théâtre, performance, Laetitia Bonfante, Blandine Vialettes, chorégraphie, Les jambes qui doutent, cloon, chant, festival, ljqd"
 ---
 
 
@@ -26,7 +28,7 @@ permalink: /spectacle/
       Création 2024
     </div>
 
-    
+
   </div>
 </div>
 
@@ -68,7 +70,7 @@ permalink: /spectacle/
   <div class="note-intention">
     <div class="note-intention__content" id="note-intention-content">
     <p>Ce spectacle est né du désir de célébrer une amitié singulière, dans laquelle chacun·e peut se reconnaître. À l’origine de ce projet, il y a une conviction profonde : la relation à l’autre est un espace fragile, nécessaire et vivant. Elle nous expose à la différence -langue, genre, origine, histoire- tout en révélant ce que nous partageons. Dans un monde où l’individualisme s’impose et où la peur de l’altérité grandit, nous voulons affirmer la puissance et la beauté de l’amitié, ce lien précieux qui nourri et fortifie.</p>
- 
+
     <p>Longue Distance s’articule autour de plusieurs questions&#8239;: comment maintenir le lien quand la distance entre deux êtres s’installe&#8239;? Que reste-t-il de la relation quand elle se vit à travers les souvenirs&#8239;? Comment continue-t-on à faire une place à l’autre malgré son absence&#8239;? Ces interrogations nous ont amenées à explorer des thématiques en creux telles que la confiance, la complicité, ou encore la peur de l’abandon. Par le jeu de la danse contact, de la synchronie, de la polyphonie, ou encore du tango, les corps des deux amies se cherchent, témoignant de leur volonté de garder le lien coûte que coûte. </p>
 
     <p>Dans ce projet, nous avons souhaité nous éloigner de l’abstraction parfois associée à la danse contemporaine, en ancrant notre recherche dans des situations concrètes, traitées avec humour et légèreté. Nos corps racontent des moments simples et universels&#8239;: les tentatives maladroites de se rejoindre, les appels téléphoniques semés d’obstacles, les hésitations avant des retrouvailles. Nous avons développé une approche physique à la fois directe et contextuelle&#8239;: lorsque l’une essaie d’appeler, l’autre devient le téléphone… puis les rôles s’inversent. Ce glissement entre “corps humain” et “corps-objet” nous ouvre un espace de jeu fertile, où la lucidité côtoie l’imaginaire. L’amitié fait ressurgir des états proches de l’enfance&#8239;: excitation, vulnérabilité, joie débordante, parfois traversée par les larmes. Ainsi, les corps mêlés dessinent une danse “à bras-le-corps”, traversée par les ratés, les élans, les silences et les espoirs. Une forme d’architecture vivante émerge sur scène&#8239;: des figures d’écoute, des “corps-meubles”, sur lesquels viennent parfois se poser des mots, prolongeant le mouvement et enrichissant le récit.</p>

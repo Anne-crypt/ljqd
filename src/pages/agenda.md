@@ -2,6 +2,8 @@
 title: Agenda
 layout: base.njk
 permalink: /agenda/
+description: "Les jambes qui doutent est une compagnie de danse créative basée en Île-de-France, explorant la danse théâtrale et l'hybridité artistique."
+keywords: "danse, compagnie, théâtre, performance, Île-de-France, chorégraphie, Les jambes qui doutent, cloon, chant, festival"
 ---
 
 <div class="agenda-row">
@@ -91,7 +93,7 @@ permalink: /agenda/
 
 <!-- # 2024
 
-14 septembre - Fey’stival, Metz​​ “Longue Distance” 
+14 septembre - Fey’stival, Metz​​ “Longue Distance”
 
 ​​Du 14 au 17 août - festival d’Aurillac
 Sortie de création de “Longue Distance” -->

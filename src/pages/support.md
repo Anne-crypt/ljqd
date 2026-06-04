@@ -2,6 +2,8 @@
 title: Nous soutenir
 layout: base.njk
 permalink: /support/
+description: "Les jambes qui doutent est une compagnie de danse créative basée en Île-de-France, explorant la danse théâtrale et l'hybridité artistique."
+keywords: "danse, compagnie, théâtre, performance, Laetitia Bonfante, Blandine Vialettes, chorégraphie, Les jambes qui doutent, cloon, chant, festival, ljqd"
 ---
 
   <div class="intro">

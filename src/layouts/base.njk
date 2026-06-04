@@ -13,6 +13,11 @@
   <link rel="icon" href="{{ '/assets/favicon.ico' | url }}">
 
   <title>{{ title }}</title>
+  <meta name="description" content="{{ description or 'Les jambes qui doutent - Compagnie de danse' }}">
+  <meta name="keywords" content="{{ keywords or 'danse, théâtre, compagnie, performance, Île-de-France' }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or 'Les jambes qui doutent - Compagnie de danse' }}">
+  <meta property="og:type" content="website">
 </head>
 
 <body>
