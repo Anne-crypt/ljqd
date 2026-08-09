@@ -21,9 +21,10 @@ jobs:
 
       - run: npm install
 
-      - run: rm -rf _site
-
       - run: npx @11ty/eleventy
+
+      - name: Build
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
