@@ -1,7 +1,7 @@
 ---
 title: Spectacle
 layout: base.njk
-permalink: /spectacle/
+permalink: /longue-distance/
 description: "Les jambes qui doutent est une compagnie de danse créative basée en Île-de-France, explorant la danse théâtrale et l'hybridité artistique."
 keywords: "danse, compagnie, théâtre, performance, Laetitia Bonfante, Blandine Vialettes, chorégraphie, Les jambes qui doutent, cloon, chant, festival, ljqd"
 ---
@@ -61,7 +61,7 @@ keywords: "danse, compagnie, théâtre, performance, Laetitia Bonfante, Blandine
 <div class="info">
   <div class=""><h2>Teaser</h2></div>
   <div class="distribution-list">
-    <p>https://www.youtube.com/watch?v=4AG4VARQX1o</p>
+    <p><a href="https://www.youtube.com/watch?v=4AG4VARQX1o" target="_blank" rel="noopener noreferrer" class="compagny-highlight">Longue distance</a></p>
   </div>
 </div>
 

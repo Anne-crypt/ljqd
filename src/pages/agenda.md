@@ -7,16 +7,23 @@ keywords: "danse, compagnie, théâtre, performance, Île-de-France, chorégraph
 ---
 
 <div class="agenda-row">
-  <img src="/assets/images/agenda/DSC03521_2.jpg" alt="" class="agenda-row__image">
+	<div class="passed-agenda-row__images">
+		<img src="/assets/images/agenda/DSC03521_2.jpg" alt="" class="agenda-row__image">
+		<img src="/assets/images/nuit_noire/ModIMG_7039.jpg" alt="" class="agenda-row__image">
+	</div>
   <div>
 		<h1><span style="color: var(--color-pink); opacity: 0.8;">2026</span></h1>
 
+		<p><strong>5 au 11 octobre</strong><br>
+		résidence à La curie - La Courneuve<br>
+		<a href="/la-nuit-noire/" class="compagny-highlight">La nuit noire</a></p>
+
 		<p><strong>19 au 22 août</strong><br>
 		festival d’Aurillac<br>
-		<span class="compagny-highlight">Longue Distance</span></p>
+		<a href="/longue-distance/" class="compagny-highlight">Longue Distance</a></p>
 
 		<p><strong>11 juillet</strong><br>
-		Beaurepaire (en cours d'organisation) <a
+		Beaurepaire <a
 			href="https://www.lautremain.com"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -38,7 +45,7 @@ keywords: "danse, compagnie, théâtre, performance, Île-de-France, chorégraph
 			rel="noopener noreferrer"
 			class="passed-agenda-row__link"
 			aria-label="Voir le site (nouvel onglet)">→</a><br>
-		<span class="compagny-highlight">Longue Distance</span></p>
+		<a href="/longue-distance/" class="compagny-highlight">Longue Distance</a></p>
 
 		<div class="agenda-cta">
 			<a href="/contact/" class="agenda-cta__button">Contactez-nous</a>
