@@ -55,15 +55,20 @@
 	Accueil
 </button>
 
-		
-<button
-	type="button"
-	class="site-header__nav-button"
-	onclick="window.location.href='/spectacle/'"
->
-	Spectacle
-</button>
-
+		<div class="site-header__dropdown" data-dropdown>
+			<button
+				type="button"
+				class="site-header__nav-button site-header__dropdown-toggle"
+				aria-expanded="false"
+				aria-controls="spectacles-submenu"
+			>
+				Spectacles
+			</button>
+			<div id="spectacles-submenu" class="site-header__submenu" role="menu" aria-label="Sous-menu spectacles">
+				<a href="/longue-distance/" class="site-header__submenu-link" role="menuitem">Longue distance</a>
+				<a href="/la-nuit-noire/" class="site-header__submenu-link" role="menuitem">La nuit noire</a>
+			</div>
+		</div>
 		
 <button
 	type="button"
@@ -112,6 +117,8 @@
 
 		var toggle = header.querySelector('.site-header__menu-toggle');
 		var nav = header.querySelector('.site-header__nav');
+		var dropdown = header.querySelector('[data-dropdown]');
+		var dropdownToggle = dropdown ? dropdown.querySelector('.site-header__dropdown-toggle') : null;
 		if (!toggle || !nav) {
 			return;
 		}
@@ -122,19 +129,66 @@
 			toggle.setAttribute('aria-label', expanded ? 'Fermer le menu' : 'Ouvrir le menu');
 		}
 
+		function setSubmenuExpanded(expanded) {
+			if (!dropdown || !dropdownToggle) {
+				return;
+			}
+
+			dropdown.classList.toggle('is-expanded', expanded);
+			dropdownToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+		}
+
 		toggle.addEventListener('click', function () {
 			setExpanded(!header.classList.contains('is-open'));
+			if (window.innerWidth > 720) {
+				setSubmenuExpanded(false);
+			}
 		});
 
+		if (dropdownToggle) {
+			dropdownToggle.addEventListener('click', function (event) {
+				if (window.innerWidth > 720) {
+					return;
+				}
+
+				event.preventDefault();
+				setSubmenuExpanded(!dropdown.classList.contains('is-expanded'));
+			});
+		}
+
 		nav.addEventListener('click', function (event) {
-			if (event.target.closest('button')) {
+			var isDropdownToggle = event.target.closest('.site-header__dropdown-toggle');
+			var isNavigationTarget = event.target.closest('.site-header__nav-button, .site-header__cta-button, .site-header__submenu-link');
+
+			if (window.innerWidth <= 720 && isNavigationTarget && !isDropdownToggle) {
 				setExpanded(false);
+				setSubmenuExpanded(false);
+			}
+		});
+
+		document.addEventListener('click', function (event) {
+			if (!dropdown || window.innerWidth <= 720) {
+				return;
+			}
+
+			if (!dropdown.contains(event.target)) {
+				setSubmenuExpanded(false);
+			}
+		});
+
+		document.addEventListener('keydown', function (event) {
+			if (event.key === 'Escape') {
+				setSubmenuExpanded(false);
 			}
 		});
 
 		window.addEventListener('resize', function () {
 			if (window.innerWidth > 960) {
 				setExpanded(false);
+			}
+
+			if (window.innerWidth > 720) {
+				setSubmenuExpanded(false);
 			}
 		});
 	})();
