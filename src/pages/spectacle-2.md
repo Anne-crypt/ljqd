@@ -13,7 +13,7 @@ keywords: "danse, spectacle, compagnie, Les jambes qui doutent"
 
   <div class="intro__text">
     <h1>La nuit noire</h1>
-    <p>Entre réalité et fantaisie, "La nuit noire" est un spectacle de danse contemporaine qui revisite l'histoire culte de Bram Stoker à travers le regard de Mina Harker. Le mouvement se mêle au récit parlé, au chant, au théâtre d'ombres et d'objets, dans une exploration sensorielle et narrative du désir irrésistible. Deux performeurs sur scène font vivre cette fable de métamorphose et de tentation, où le corps devient le principal vecteur du récit.</p>
+    <p>Entre réalité et fantaisie, La nuit noire est un spectacle de danse contemporaine qui revisite l'histoire culte de Bram Stoker à travers le regard de Mina Harker. Le mouvement se mêle au récit parlé, au chant, au théâtre d'ombres et d'objets, dans une exploration sensorielle et narrative du désir irrésistible. Deux performeurs sur scène font vivre cette fable de métamorphose et de tentation, où le corps devient le principal vecteur du récit.</p>
   </div>
 </div>
 
