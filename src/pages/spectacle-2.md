@@ -8,7 +8,7 @@ keywords: "danse, spectacle, compagnie, Les jambes qui doutent"
 
 <div class="intro">
   <div class="intro__images">
-    <img src="/assets/images/nuit_noire/ModIMG_7039.jpg" alt="Photo du spectacle" class="intro__image">
+    <img src="/assets/images/nuit_noire/ModIMG_7039.avif" alt="Photo du spectacle" class="intro__image">
   </div>
 
   <div class="intro__text">

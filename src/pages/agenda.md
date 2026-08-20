@@ -8,8 +8,8 @@ keywords: "danse, compagnie, théâtre, performance, Île-de-France, chorégraph
 
 <div class="agenda-row">
 	<div class="passed-agenda-row__images">
-		<img src="/assets/images/agenda/DSC03521_2.jpg" alt="" class="agenda-row__image">
-		<img src="/assets/images/nuit_noire/ModIMG_7039.jpg" alt="" class="agenda-row__image">
+		<img src="/assets/images/agenda/DSC03521_2.avif" alt="" class="agenda-row__image">
+		<img src="/assets/images/nuit_noire/ModIMG_6997.avif" alt="" class="agenda-row__image">
 	</div>
   <div>
 		<h1><span style="color: var(--color-pink); opacity: 0.8;">2026</span></h1>
