@@ -14,6 +14,24 @@ keywords: "danse, compagnie, théâtre, performance, Île-de-France, chorégraph
   <div>
 		<h1><span style="color: var(--color-pink); opacity: 0.8;">2026</span></h1>
 
+		<p><strong>14 novembre</strong><br>
+		La nuit du cirque - Zepetra, Montpellier <a
+			href="https://lanuitducirque.com/fr/2026/programmation/la-grande-veillee-burlesque-de-zepetra/"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="passed-agenda-row__link"
+			aria-label="Voir le site (nouvel onglet)">→</a><br>
+		<a href="/longue-distance/" class="compagny-highlight">Longue Distance</a></p>
+
+		<p><strong>8 novembre</strong><br>
+		de 15h30 à 16h15 - Verrières le Buisson <a
+			href="https://www.helloasso.com/associations/compagnie-les-jambes-qui-doutent/evenements/billetterie-longue-distance-8-novembre-2026"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="passed-agenda-row__link"
+			aria-label="Voir le site (nouvel onglet)">→</a><br>
+		<a href="/longue-distance/" class="compagny-highlight">Longue Distance</a></p>
+
 		<p><strong>5 au 11 octobre</strong><br>
 		résidence à La curie - La Courneuve<br>
 		<a href="/la-nuit-noire/" class="compagny-highlight">La nuit noire</a></p>
